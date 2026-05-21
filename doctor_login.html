@@ -859,7 +859,7 @@
                     <i class="fas fa-hospital"></i>
                     <span>City<b>Care</b></span>
                 </div>
-                <a href="home.html" class="back-btn">
+<a href="index.html" class="back-btn">
                     <i class="fas fa-arrow-left"></i> Back to Home
                 </a>
             </div>
@@ -939,9 +939,25 @@
             </div>
         </div>
         
-        <div class="footer-note">
+<div class="footer-note">
             <p>© 2026 CityCare Hospital. All rights reserved.</p>
         </div>
+    </div>
+
+    <style>
+      /* shared bottom home bar (local override) */
+      .bottom-home-bar{position:fixed;left:0;right:0;bottom:0;z-index:999;background:rgba(15,23,42,0.85);backdrop-filter:blur(8px);padding:10px 14px;display:flex;justify-content:center;}
+      .bottom-home-link{color:white;text-decoration:none;font-weight:700;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);padding:10px 16px;border-radius:999px;}
+      .bottom-home-link:hover{background:rgba(255,255,255,0.14);transform:translateY(-1px);}
+body{padding-bottom:110px;}
+    </style>
+
+    <!-- Fixed Bottom: Back to Home -->
+    <div class="bottom-home-bar">
+      <a class="bottom-home-link" href="index.html">
+        <i class="fas fa-home"></i>
+        <span>Back to Home</span>
+      </a>
     </div>
 
     <div class="dashboard-container" id="dashboardSection">
@@ -1793,6 +1809,15 @@ tbody.innerHTML = patients.map((patient, index) => {
             });
         });
     </script>
+
+    <!-- Fixed Bottom: Back to Home -->
+    <div class="bottom-home-bar">
+      <a class="bottom-home-link" href="index.html">
+        <i class="fas fa-home"></i>
+        <span>Back to Home</span>
+      </a>
+    </div>
+
 </body>
 </html>
 
